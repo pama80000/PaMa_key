@@ -54,9 +54,17 @@
         device = <&trackball>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
         
-        scroller {
+        scroller_fast {
             layers = <5>;
             input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+        scroller_normal {
+            layers = <6>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_wheel_scaler_normal 1 2>, <&zip_hwheel_scaler_normal 1 2>;
+        };
+        scroller_slow {
+            layers = <7>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_wheel_scaler_slow 1 4>, <&zip_hwheel_scaler_slow 1 4>;
         };
     };
 };
