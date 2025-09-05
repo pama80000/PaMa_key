@@ -2,7 +2,7 @@
 if SHIELD_YKEY_FOR_FARM_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "ykey_for_farm"
+    default "PaMa_key"
 
 endif
 
