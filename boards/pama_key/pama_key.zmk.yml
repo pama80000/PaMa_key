@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: pama_key
+name: PaMa_key
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - pama_key_left
+  - pama_key_right
