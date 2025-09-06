@@ -1,12 +1,8 @@
 
 include:
   - board: akdk_bt1
-    shield: ykey_for_farm_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    shield: PaMa_Key_left
   - board: akdk_bt1
-    shield: ykey_for_farm_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    shield: PaMa_Key_right
   - board: akdk_bt1
     shield: settings_reset
