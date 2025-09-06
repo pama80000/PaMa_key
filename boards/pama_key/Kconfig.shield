@@ -1,0 +1,4 @@
+config SHIELD_YKEY_FOR_FARM_LEFT
+    def_bool $(shields_list_contains,ykey_for_farm_left)
+config SHIELD_YKEY_FOR_FARM_RIGHT
+    def_bool $(shields_list_contains,ykey_for_farm_right)
