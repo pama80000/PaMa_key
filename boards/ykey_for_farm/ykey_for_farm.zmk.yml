@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: ykey_for_farm
+name: PaMa_key
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - ykey_for_farm_left
+  - ykey_for_farm_right

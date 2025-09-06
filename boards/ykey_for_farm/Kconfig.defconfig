@@ -1,0 +1,14 @@
+
+if SHIELD_YKEY_FOR_FARM_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "PaMa_key"
+
+endif
+
+if SHIELD_YKEY_FOR_FARM_LEFT || SHIELD_YKEY_FOR_FARM_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
