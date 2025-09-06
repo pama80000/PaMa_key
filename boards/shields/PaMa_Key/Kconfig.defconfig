@@ -1,0 +1,14 @@
+
+if SHIELD_PAMA_KEY_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "PaMa_key"
+
+endif
+
+if SHIELD_PAMA_KEY_LEFT || SHIELD_PAMA_KEY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

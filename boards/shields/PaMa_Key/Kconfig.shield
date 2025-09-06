@@ -1,0 +1,4 @@
+config SHIELD_PAMA_KEY_LEFT
+    def_bool $(shields_list_contains,PaMa_Key_left)
+config SHIELD_PAMA_KEY_RIGHT
+    def_bool $(shields_list_contains,PaMa_Key_right)
