@@ -1,11 +1,11 @@
 
 include:
   - board: akdk_bt1
-    shield: pama_key_left
+    shield: ykey_for_farm_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
-    shield: pama_key_right
+    shield: ykey_for_farm_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: akdk_bt1
