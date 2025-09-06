@@ -86,50 +86,65 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Windows {
+            bindings = <&to 1>;
+            key-positions = <42 16>;
+            layers = <0 1>;
+        };
+
+        Mac {
+            bindings = <&to 0>;
+            key-positions = <42 51>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5     &kp LEFT_BRACKET                                   &kp LEFT_BRACKET       &kp NUMBER_6  &kp N7     &kp N8       &kp N9      &kp N0                 &kp NON_US_BACKSLASH
-&kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T      &kp RIGHT_BRACKET                                  &kp RIGHT_BRACKET      &kp Y         &kp U      &kp I        &kp O       &kp P                  &kp BACKSPACE
-&kp LCTRL       &kp A         &kp S         &kp D         &kp F             &kp G      &kp SQT                                            &kp MINUS              &kp H         &kp J      &kp K        &kp L       &lt 2 SEMICOLON        &kp ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V             &kp B      &kp MINUS                                          &mt RIGHT_SHIFT EQUAL  &kp N         &kp M      &lt 7 COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &lt 1 SQT
-                                                          &kp LEFT_COMMAND  &kp SPACE  &kp EQUAL          &lt 2 LS(GRAVE)  &kp BACKSPACE  &kp ENTER                            &mkp LCLK  &mkp MCLK    &mkp RCLK
-                                                                                       &kp K_BACK         &kp ENTER        &kp SPACE      &kp RIGHT_COMMAND
+&kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5     &kp LEFT_BRACKET                                         &kp LEFT_BRACKET       &kp NUMBER_6  &kp N7     &kp N8       &kp N9      &kp N0                 &kp NON_US_BACKSLASH
+&kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T      &kp RIGHT_BRACKET                                        &kp RIGHT_BRACKET      &kp Y         &kp U      &kp I        &kp O       &kp P                  &kp BACKSPACE
+&kp LCTRL       &kp A         &kp S         &kp D         &kp F             &kp G      &kp SQT                                                  &kp MINUS              &kp H         &kp J      &kp K        &kp L       &lt 3 SEMICOLON        &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V             &kp B      &kp MINUS                                                &mt RIGHT_SHIFT EQUAL  &kp N         &kp M      &lt 7 COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &lt 2 SQT
+                                                          &kp LEFT_COMMAND  &kp SPACE  &kp EQUAL                &lt 3 LS(GRAVE)  &kp BACKSPACE  &kp ENTER                            &mkp LCLK  &mkp MCLK    &mkp RCLK
+                                                                                       &mt RIGHT_WIN BACKSPACE  &kp ENTER        &kp SPACE      &kp RIGHT_COMMAND
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &kp F1    &kp F2   &kp F3          &kp F4           &kp F5  &none                &none  &kp F6  &kp F7  &kp F8          &kp F9          &kp F10          &kp F11
-&none  &none     &none    &kp UP_ARROW    &kp UP_ARROW     &none   &none                &none  &none   &none   &none           &kp UP_ARROW    &kp UP_ARROW     &none
-&none  &kp HOME  &kp END  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none   &none                &none  &none   &none   &none           &kp LEFT_ARROW  &kp RIGHT_ARROW  &none
-&none  &none     &none    &kp DOWN_ARROW  &kp DOWN_ARROW   &none   &none                &none  &none   &none   &msc SCRL_UP    &kp DOWN_ARROW  &kp DOWN_ARROW   &none
-                                          &none            &none   &none  &none  &none  &none          &none   &msc SCRL_DOWN  &none
-                                                                   &none  &none  &none  &none
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &mt LCTRL INT_MUHENKAN  &trans  &trans                  &trans  &trans  &trans                  &trans  &trans  &trans
+                                                                &mt LEFT_WIN BACKSPACE  &trans  &trans  &kp INT_HENKAN
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none  &none  &none  &kp N7        &kp N8           &kp N9                      &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &kp NUMBER_4  &kp N5           &kp NUMBER_6                &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3                &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &kp N0        &kp KP_NUMBER_0  &kp PERIOD                  &none  &none  &none  &none  &none  &none  &none
-                            &kp PLUS      &kp MINUS        &kp STAR      &none  &none  &none         &none  &none  &none
-                                                           &kp SLASH     &none  &none  &none
+&trans  &kp F1    &kp F2   &kp F3          &kp F4           &kp F5  &trans                  &trans  &kp F6  &kp F7  &kp F8          &kp F9          &kp F10          &kp F11
+&trans  &trans    &trans   &kp UP_ARROW    &kp UP_ARROW     &trans  &trans                  &trans  &trans  &trans  &trans          &kp UP_ARROW    &kp UP_ARROW     &trans
+&trans  &kp HOME  &kp END  &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans  &trans                  &trans  &trans  &trans  &trans          &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans    &trans   &kp DOWN_ARROW  &kp DOWN_ARROW   &trans  &trans                  &trans  &trans  &trans  &msc SCRL_UP    &kp DOWN_ARROW  &kp DOWN_ARROW   &trans
+                                           &trans           &trans  &trans  &trans  &trans  &trans          &trans  &msc SCRL_DOWN  &trans
+                                                                    &trans  &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none  &none
-                            &none  &none  &none  &none  &none  &none         &none  &none  &none
-                                          &none  &none  &none  &none
+&trans  &trans  &trans  &trans  &kp N7        &kp N8           &kp N9                        &kp N7        &kp N8        &kp N9        &kp PLUS      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5           &kp NUMBER_6                  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp N0        &kp KP_NUMBER_0  &kp PERIOD                    &kp N0        &kp N0        &kp PERIOD    &kp SLASH     &trans  &trans  &trans
+                                &kp PLUS      &kp MINUS        &kp STAR      &trans  &trans  &trans                      &trans        &trans        &trans
+                                                               &kp SLASH     &trans  &trans  &trans
             >;
         };
 
@@ -146,34 +161,34 @@
 
         scroll_fast_layer {
             bindings = <
-&none  &none  &none  &none  &none            &none              &none                 &none   &none  &none              &none            &none  &none  &none
-&none  &none  &none  &none  &none            &none              &none                 &none   &none  &none              &none            &none  &none  &none
-&none  &none  &none  &none  &none            &none              &none                 &none   &none  &none              &none            &none  &none  &none
-&none  &none  &none  &none  &none            &none              &none                 &none   &none  &none              &none            &none  &none  &none
-                            &mo SCROLL_SLOW  &mo SCROLL_NORMAL  &trans  &none  &none  &trans         &mo SCROLL_NORMAL  &mo SCROLL_SLOW  &none
-                                                                &none   &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+                            &mo 7  &mo 6  &trans  &none  &none  &trans         &mo 6  &mo 7  &none
+                                          &none   &none  &none  &none
             >;
         };
 
         scroll_normal_layer {
             bindings = <
-&none  &none  &none  &none  &none            &none            &none                 &none   &none  &none            &none            &none  &none  &none
-&none  &none  &none  &none  &none            &none            &none                 &none   &none  &none            &none            &none  &none  &none
-&none  &none  &none  &none  &none            &none            &none                 &none   &none  &none            &none            &none  &none  &none
-&none  &none  &none  &none  &none            &none            &none                 &none   &none  &none            &none            &none  &none  &none
-                            &mo SCROLL_SLOW  &mo SCROLL_FAST  &trans  &none  &none  &trans         &mo SCROLL_FAST  &mo SCROLL_SLOW  &none
-                                                              &none   &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+                            &mo 7  &mo 5  &trans  &none  &none  &trans         &mo 5  &mo 7  &none
+                                          &none   &none  &none  &none
             >;
         };
 
         scroll_slow_layer {
             bindings = <
-&none  &none  &none  &none  &none              &none            &none                 &none   &none  &none            &none              &none  &none  &none
-&none  &none  &none  &none  &none              &none            &none                 &none   &none  &none            &none              &none  &none  &none
-&none  &none  &none  &none  &none              &none            &none                 &none   &none  &none            &none              &none  &none  &none
-&none  &none  &none  &none  &none              &none            &none                 &none   &none  &none            &none              &none  &none  &none
-                            &mo SCROLL_NORMAL  &mo SCROLL_FAST  &trans  &none  &none  &trans         &mo SCROLL_FAST  &mo SCROLL_NORMAL  &none
-                                                                &none   &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                 &none   &none  &none  &none  &none  &none  &none
+                            &mo 6  &mo 5  &trans  &none  &none  &trans         &mo 5  &mo 6  &none
+                                          &none   &none  &none  &none
             >;
         };
     };
