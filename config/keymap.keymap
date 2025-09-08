@@ -107,23 +107,23 @@
 
         layer_0 {
             bindings = <
-&kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5     &kp LEFT_BRACKET                                   &kp LEFT_BRACKET       &kp NUMBER_6  &kp N7     &kp N8       &kp N9      &kp N0                 &kp NON_US_BACKSLASH
-&kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T      &kp RIGHT_BRACKET                                  &kp RIGHT_BRACKET      &kp Y         &kp U      &kp I        &kp O       &kp P                  &kp BACKSPACE
-&kp LCTRL       &kp A         &kp S         &kp D         &kp F             &kp G      &kp SQT                                            &kp MINUS              &kp H         &kp J      &kp K        &kp L       &lt 3 SEMICOLON        &kp ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V             &kp B      &kp MINUS                                          &mt RIGHT_SHIFT EQUAL  &kp N         &kp M      &lt 7 COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &lt 2 SQT
-                                                          &kp LEFT_COMMAND  &kp SPACE  &kp EQUAL          &lt 3 LS(GRAVE)  &kp BACKSPACE  &kp ENTER                            &mkp LCLK  &mkp MCLK    &mkp RCLK
-                                                                                       &kp BACKSPACE      &kp ENTER        &kp SPACE      &kp RIGHT_COMMAND
+&kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5     &kp LEFT_BRACKET                               &kp LEFT_BRACKET       &kp NUMBER_6  &kp N7     &kp N8       &kp N9      &kp N0                 &kp NON_US_BACKSLASH
+&kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T      &kp RIGHT_BRACKET                              &kp RIGHT_BRACKET      &kp Y         &kp U      &kp I        &kp O       &kp P                  &kp BACKSPACE
+&kp LCTRL       &kp A         &kp S         &kp D         &kp F             &kp G      &kp SQT                                        &kp MINUS              &kp H         &kp J      &kp K        &kp L       &lt 3 SEMICOLON        &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V             &kp B      &kp MINUS                                      &mt RIGHT_SHIFT EQUAL  &kp N         &kp M      &lt 7 COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH  &lt 2 SQT
+                                                          &kp LEFT_COMMAND  &kp SPACE  &kp EQUAL          &lt 3 GRAVE  &kp BACKSPACE  &kp ENTER                            &mkp LCLK  &mkp MCLK    &mkp RCLK
+                                                                                       &kp LEFT_COMMAND   &kp SPACE    &kp SPACE      &kp RIGHT_COMMAND
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                &mt LCTRL INT_MUHENKAN  &trans  &trans                  &trans  &trans  &trans                  &trans  &trans  &trans
-                                                                &mt LEFT_WIN BACKSPACE  &trans  &trans  &kp INT_HENKAN
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans                                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &mt LCTRL INT_MUHENKAN  &trans  &trans                        &trans  &trans  &trans                  &trans  &trans  &trans
+                                                                &mt LEFT_WIN INTERNATIONAL_5  &trans  &trans  &kp INT_HENKAN
             >;
         };
 
