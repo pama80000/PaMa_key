@@ -1,5 +1,6 @@
 if BOARD_AKDK_BT1
 
+/*
 if USB_DEVICE_STACK
 
 config USB_NRFX
@@ -9,5 +10,6 @@ endif # USB_DEVICE_STACK
 
 config BT_CTLR
     default BT
+*/
 
 endif
