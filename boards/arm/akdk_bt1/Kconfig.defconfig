@@ -1,5 +1,10 @@
 if BOARD_AKDK_BT1
 
+# ▼▼▼ 追加・修正箇所ここから ▼▼▼
+config BOARD
+    default "akdk_bt1"
+# ▲▲▲ 追加・修正箇所ここまで ▲▲▲
+
 if USB_DEVICE_STACK
 
 config USB_NRFX
