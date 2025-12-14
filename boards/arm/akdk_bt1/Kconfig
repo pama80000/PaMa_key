@@ -7,6 +7,3 @@ config BOARD_ENABLE_DCDC
     default y
     depends on BOARD_AKDK_BT1
 
-# 追加：board側でDCDCを有効にしたいなら、素直にこのシンボルを既定値へ
-config SOC_DCDC_NRF52X
-    default y if BOARD_ENABLE_DCDC
