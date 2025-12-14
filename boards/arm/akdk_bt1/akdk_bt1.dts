@@ -1,5 +1,5 @@
 /dts-v1/;
-#include <nordic/nrf52840_qiaa.dtsi>
+#include <nordic/nrf52840.dtsi>
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
